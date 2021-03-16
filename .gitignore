@@ -7,7 +7,7 @@
 
 
 # production
-/dist
+#/dist
 /output
 
 # misc
