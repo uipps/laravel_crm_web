@@ -55,7 +55,7 @@ export default defineConfig({
     host: '0.0.0.0',
     proxy: {
       '/api': {
-        target: 'http://crm-front.esmtong.cn',
+        target: 'http://1.xhat.com:10120',
         // pathRewrite: { '^/api': '' },
         changeOrigin: true,
       },
