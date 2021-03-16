@@ -1,0 +1,27 @@
+export default {
+  '@primary-color': '#9CCC65',
+  '@text-color': '#424242',
+  '@font-size-base': '14px',
+  '@link-color': '#0099E8',
+  '@layout-sider-background': '#757575',
+  '@layout-header-background': '#fff',
+  '@layout-header-padding': '0 16px',
+  '@menu-dark-bg': '#757575',
+  '@menu-dark-item-active-bg': '#fff',
+  '@menu-dark-selected-item-icon-color': '#9CCC65',
+  '@menu-inline-toplevel-item-height': '48px',
+  '@table-padding-vertical': '8px',
+  '@table-padding-horizontal': '8px',
+  '@card-head-color': '#424242',
+  '@card-head-height': '48px',
+  '@card-head-padding': '12px',
+  '@card-head-font-size': '14px',
+  '@card-padding-base': '16px',
+
+  '@modal-header-padding': '8px 16px',
+  '@modal-heading-color': '#424242',
+  '@modal-header-close-size': '40px',
+  '@modal-footer-padding-vertical': '8px',
+  '@modal-body-padding': '16px',
+  '@label-color': '#9E9E9E'
+};

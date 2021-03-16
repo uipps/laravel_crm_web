@@ -1,0 +1,89 @@
+.listInput {
+  &__item {
+    padding-top: 24px;
+    .ant-input-number {
+      width: 60px;
+      margin: 0 8px;
+    }
+  }
+}
+.ant-radio-group {
+  line-height: 32px;
+}
+.activity {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .ant-card-body {
+    flex: 1;
+    overflow-y: auto;
+    position: relative;
+    .ant-form {
+      height: 100%;
+    }
+  }
+
+  &__tip {
+    line-height:17px;
+    font-size:12px;
+    color: #9E9E9E;
+    margin-top: 6px;
+  }
+  .line-input {
+    .ant-form-item-control-input {
+      display: block;
+    }
+    .ant-form-item-control-input-content {
+      width: 240px;
+      flex: 0;
+    }
+  }
+}
+
+.goods {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .ant-card-body {
+    flex: 1;
+    overflow-y: auto;
+    position: relative;
+    .ant-form {
+      height: 100%;
+    }
+  }
+  .ant-form-item-control-input {
+    display: block;
+  }
+  .ant-form-item-control-input-content {
+    flex: 0;
+    input {
+      width: 240px;
+    }
+  }
+}
+.space-style {
+  &>* {
+    margin-right: 16px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.goods-price {
+  &__input {
+    width: 210px;
+    .ant-input-wrapper input {
+      width: 180px;
+    }
+    .ant-input-group-addon {
+      min-width: 37px;
+    }
+  }
+  &__item {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

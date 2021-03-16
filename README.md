@@ -1,2 +1,16 @@
-# laravel_crm_web
-客户管理管理项目（crm项目），js
+# umi project
+
+## Getting Started
+
+Install dependencies,
+
+```bash
+$ yarn
+```
+
+Start the dev server,
+
+```bash
+$ yarn start
+```
+订单编号

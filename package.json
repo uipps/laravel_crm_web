@@ -1,0 +1,45 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage",
+    "lint": "lint-staged",
+    "j2c": "json2excel j2c ./src/locales ./output",
+    "c2j": "json2excel c2j ./output ./src/locales"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@umijs/hooks": "1.9.0",
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "3.0.16",
+    "antd": "^4.4.1",
+    "lazysizes": "5.2.0",
+    "lint-staged": "10.0.7",
+    "lodash": "4.17.15",
+    "md5": "2.2.1",
+    "memoize-one": "5.1.1",
+    "moment": "2.24.0",
+    "numeral": "2.0.6",
+    "path-to-regexp": "6.1.0",
+    "prettier": "1.19.1",
+    "qs": "6.9.3",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "store2": "2.11.0",
+    "umi": "3.0.18",
+    "yorkie": "2.0.0"
+  },
+  "devDependencies": {
+    "@zwzou/json2excel": "^1.0.1"
+  }
+}

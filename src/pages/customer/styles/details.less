@@ -1,0 +1,105 @@
+.ctd {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  overflow: hidden;
+  height: 100%;
+  &__content {
+    //height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    .data-sheet-header {
+      padding: 0;
+    }
+  }
+  .ant-tabs-nav-wrap {
+    padding: 16px 16px 0;
+  }
+  .ant-tabs-bar {
+    margin-bottom: 0;
+  }
+}
+.c-info {
+  padding: 16px;
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+  .ant-form-item {
+    line-height: 36px;
+  }
+  &__tb {
+    padding: 16px;
+    border-top: 1px solid #f0f0f0;
+    margin-top: 8px;
+    .btn1 {
+      margin-right: 16px;
+    }
+  }
+  &__project {
+    &--title {
+      line-height: 20px;
+      font-size: 14px;
+      color: #424242;
+      padding-left: 8px;
+      position: relative;
+      margin-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: #9ccc65;
+      }
+    }
+    &--edit {
+      color: #0099e8;
+      cursor: pointer;
+      & > span {
+        margin-right: 4px;
+      }
+    }
+    .table-label {
+      color: #9e9e9e;
+    }
+    .ant-table-cell {
+      padding: 16px;
+    }
+    .more {
+      line-height: 20px;
+      font-size: 14px;
+      color: #0099e8;
+      padding: 16px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+  .remarks {
+    &__edit {
+      display: flex;
+      &--btn {
+        margin-top: 8px;
+        button {
+          margin-right: 16px;
+        }
+      }
+      textarea {
+        width: 350px;
+      }
+    }
+  }
+  .add-remarks {
+    margin-top: 16px;
+    textarea {
+      width: 350px;
+    }
+    button {
+      margin-top: 16px;
+    }
+  }
+}

@@ -1,0 +1,170 @@
+.data-sheet {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  overflow: hidden;
+  background: #fff;
+  &-table {
+    flex-shrink: 1;
+    flex-grow: 1;
+    border: 1px solid #F0F0F0;
+    .ant-table-expand-icon-col {
+      width: 0px !important;
+    }
+    .ant-table-thead {
+      .ant-table-cell {
+        height: 32px;
+        line-height: 32px;
+        padding: 0 8px;
+        color: #424242;
+        background: #efefef;
+        border-radius: 0px !important;
+        border: none;
+      }
+    }
+    .ant-table-tbody .ant-table-row {
+      &:hover {
+        > td {
+          background: #fff;
+        }
+      }
+      &:nth-child(even) {
+        > td {
+          background: #f5f5f5;
+        }
+      }
+    }
+    .ant-table-tbody > tr > td {
+      border-right: 1px solid #f0f0f0;
+      border-bottom-color: transparent;
+      &:last-child {
+        border-right-color: transparent;
+      }
+    }
+    .ant-table-cell {
+      .ant-btn-link {
+        padding: 4px;
+      }
+    }
+  }
+  &-header {
+    padding: 8px 0;
+    &__btn {
+      margin-right: 16px;
+    }
+    &-extra {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 16px;
+    }
+  }
+  &-footer {
+    padding: 8px 0;
+    // background: #fafafa;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &--action {
+      >button {
+        &:nth-child(2n) {
+          margin-left: 16px;
+        }
+      }
+    }
+    .ant-pagination {
+      .ant-pagination-total-text {
+        .ant-select {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
+
+.sheet {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  overflow: hidden;
+  background: #fff;
+}
+.sheetTable {
+  border: 1px solid #F0F0F0;
+  :global {
+    .ant-table-expand-icon-col {
+      width: 0px !important;
+    }
+    .ant-table-thead {
+      .ant-table-cell {
+        min-height: 32px;
+        line-height: 1;
+        padding:9px 8px;
+        white-space: normal;
+        color: #424242;
+        background: #efefef;
+        border-radius: 0px !important;
+        border: none;
+      }
+    }
+    .ant-table-tbody .ant-table-row {
+      &:hover {
+        > td {
+          background: #fff;
+        }
+      }
+      &:nth-child(even) {
+        > td {
+          background: #f5f5f5;
+        }
+      }
+    }
+    .ant-table-tbody > tr > td {
+      border-right: 1px solid #f0f0f0;
+      border-bottom-color: transparent;
+      &:last-child {
+        border-right-color: transparent;
+      }
+    }
+    .ant-table-cell {
+      .ant-btn-link {
+        padding: 4px;
+      }
+    }
+  }
+}
+.sheetHeader {
+  padding: 8px 0;
+}
+.sheetButton {
+  margin-right: 16px;
+}
+.sheetExtra {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+.sheetFooter {
+  padding: 8px 0;
+  // background: #fafafa;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  :global {
+    .ant-pagination {
+      .ant-pagination-total-text {
+        .ant-select {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
+.sheetAction {
+  &>button {
+    margin-right: 16px;
+  }
+}

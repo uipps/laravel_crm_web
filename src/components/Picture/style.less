@@ -1,0 +1,53 @@
+.picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  height: 200px;
+  width: 200px;
+  &.widthFix {
+    height: auto !important;
+    img {
+      width: 100%;
+    }
+  }
+  &.heightFix {
+    width: auto !important;
+    img {
+      height: 100%;
+    }
+  }
+  &.scaleToFill {
+    img {
+      position: static;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &.aspectFit {
+    &.superWidth {
+      img {
+        width: 100%;
+      }
+    }
+    &.superHeight {
+      img {
+        height: 100%;
+      }
+    }
+  }
+  &.aspectFill {
+    &.superWidth {
+      img {
+        height: 100%;
+      }
+    }
+    &.superHeight {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
